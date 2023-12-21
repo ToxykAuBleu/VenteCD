@@ -1,0 +1,16 @@
+body {
+    padding-top: 5rem; 
+    padding-bottom: 6rem;
+}
+
+.card {
+    border-radius:20px;
+    background-color:rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.card-title {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
