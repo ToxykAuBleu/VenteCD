@@ -1,5 +1,4 @@
 import { restrictionNombres, restrictionAlphabet } from "./fonctions.js";
-var paiementModal = new bootstrap.Modal(document.getElementById('paiementModal'), {});
 
 restrictionNombres(document.getElementById("numCarte"), 16);
 restrictionNombres(document.getElementById("dateExpiration"), 4);

@@ -113,7 +113,10 @@
 
         unset($_SESSION['panier']);
 
-        echo "<script>paiementModal.show();</script>";
+        echo "<script>
+        var paiementModal = new bootstrap.Modal(document.getElementById('paiementModal'), {});
+        paiementModal.show();
+        </script>";
         echo "<script>setTimeout(function() {window.location.href = './index.php';}, 3000);</script>";
         exit();
     }
