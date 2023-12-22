@@ -21,7 +21,7 @@ NB : Les CD pourront au choix être enregistrés sur une BD ou dans un fichier X
 ## Installation
 ### Avant toute chose:
 Afin d'installer le site web sur votre machine, vous devez vous assurer que vous avez :
-- un serveur MySQL (version >= 5)
+- un serveur MySQL (version >= 5.7)
 - Php (version >= 7.4)
 - un serveur web (Apache2 ou NGINX) déjà un minimum configuré
 - (Optionnel) git: Utile uniquement pour mettre à jour et pour cloner le dépot
