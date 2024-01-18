@@ -36,9 +36,9 @@
             // On veut récupérer les informations du cd sélectionné.
             
             // Tentative de connexion à la base de données.
-            $ini = parse_ini_file("config.ini");
+            $ini = parse_ini_file("config.ini", true);
             try {
-                $link = mysqli_connect($ini["Adresse"], $ini["Utilisateur"], $ini["MotPasse"], $ini["Database"]);
+                $link = mysqli_connect($ini["MYSQL"]["Adresse"], $ini["MYSQL"]["Utilisateur"], $ini["MYSQL"]["MotPasse"], $ini["MYSQL"]["Database"]);
             } catch (Exception $e) {
                 echo json_encode(array("erreur" => "Erreur MySQL: " . $e->getMessage(), "code" => "N° : " . $e->getCode()));
                 exit();

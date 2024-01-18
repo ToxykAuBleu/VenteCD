@@ -38,6 +38,10 @@ Database = "<nom de la base de données>"
 Adresse = "<adresse ip>:<port>"
 Utilisateur = "<nom utilisateur>"
 MotPasse = "<mot de passe de l'utilisateur>"
+
+[ADMIN]
+Utilisateur = "<pseudonyme de l'administrateur>"
+MotPasse = "<mot de passe de l'administrateur>"
 ```
 4. Sur le serveur MySQL, créer une nouvelle base de données et un nouvel utilisateur puis exécuter la requête suivante sur cette nouvelle bdd:
 ```sql

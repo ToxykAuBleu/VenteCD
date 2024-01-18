@@ -1,17 +1,17 @@
 <?php
 	header('content-type:application/json');
 
-	$ini = parse_ini_file("config.ini");
+	$ini = parse_ini_file("config.ini", true);
 
 	// Tentative de connexion à la base de données.
 	try {
-		$link = mysqli_connect($ini["Adresse"], $ini["Utilisateur"], $ini["MotPasse"], $ini["Database"]);
+		$link = mysqli_connect($ini["MYSQL"]["Adresse"], $ini["MYSQL"]["Utilisateur"], $ini["MYSQL"]["MotPasse"], $ini["MYSQL"]["Database"]);
 	} catch (Exception $e) {
 		echo json_encode(array("erreur" => "Erreur MySQL: " . $e->getMessage(), "code" => "N° : " . $e->getCode()));
 		exit();
 	}
 
-	$nomtable = "CD";
+	$nomtable = "cd";
 	// Recherche dans la table CD avec potentiellement un tag en paramètre.
 	if (! isset($_GET["search"]) || $_GET["search"] == "") {
 		$query = "SELECT * FROM $nomtable";

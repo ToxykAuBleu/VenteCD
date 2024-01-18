@@ -15,8 +15,8 @@
     }
 
     // Connexion à la base de données.
-    $ini = parse_ini_file("config.ini");
-    $link = mysqli_connect($ini["Adresse"], $ini["Utilisateur"], $ini["MotPasse"], $ini["Database"]);
+    $ini = parse_ini_file("config.ini", true);
+    $link = mysqli_connect($ini["MYSQL"]["Adresse"], $ini["MYSQL"]["Utilisateur"], $ini["MYSQL"]["MotPasse"], $ini["MYSQL"]["Database"]);
     
     $nomtable = "CD";
     switch ($action) {

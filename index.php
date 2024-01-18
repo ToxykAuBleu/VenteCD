@@ -1,10 +1,9 @@
 <?php
-    $user_valide = "admin";
-    $mdp_valide = "admin";
+    $ini = parse_ini_file("config.ini", true);
     
     session_start();
     if (isset($_POST['user']) && isset($_POST['mdp'])) {
-        if ($user_valide == $_POST['user'] && $mdp_valide == $_POST['mdp']) {
+        if ($ini["ADMIN"]["Utilisateur"] == $_POST['user'] && $ini["ADMIN"]["MotPasse"] == $_POST['mdp']) {
             $_SESSION['user'] = $_POST['user'];
             $_SESSION['mdp'] = $_POST['mdp'];
         } else {
@@ -180,7 +179,7 @@
         <p class="text-center my-0">Site entièrement réalisé avec ❤ par <a href="https://github.com/ToxykAuBleu">@ToxykAuBleu</a> et <a href="https://github.com/Alakamar">@Alakamar</a>.
         <br/>
         <i class="bi bi-github"></i>
-        <a href="https://github.com/ToxykAuBleu/VenteCD" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Code source</a> | Version 1.0
+        <a href="https://github.com/ToxykAuBleu/VenteCD" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Code source</a> | Version 1.1
         </p>
     </footer>
     <script src="./index.js" type="module"></script>
