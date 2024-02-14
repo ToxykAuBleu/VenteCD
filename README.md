@@ -36,7 +36,7 @@ Afin d'installer le site web sur votre machine, vous devez vous assurer que vous
 ```sql
 DROP TABLE IF EXISTS CD;
 CREATE TABLE CD (
-    ID int(11) PRIMARY KEY,
+    ID int(11) PRIMARY KEY AUTO_INCREMENT,
     Titre varchar(50) NOT NULL,
     Auteur varchar(50) NOT NULL,
     Genre varchar(50) NOT NULL,
