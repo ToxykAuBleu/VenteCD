@@ -18,7 +18,7 @@
     $ini = parse_ini_file("config.ini", true);
     $link = mysqli_connect($ini["MYSQL"]["Adresse"], $ini["MYSQL"]["Utilisateur"], $ini["MYSQL"]["MotPasse"], $ini["MYSQL"]["Database"]);
     
-    $nomtable = "CD";
+    $nomtable = $ini["MYSQL"]["Table"];
     switch ($action) {
         case 'supprimer':
             if (!isset($_GET['id'])) { 

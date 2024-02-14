@@ -179,7 +179,7 @@
         <p class="text-center my-0">Site entièrement réalisé avec ❤ par <a href="https://github.com/ToxykAuBleu">@ToxykAuBleu</a> et <a href="https://github.com/Alakamar">@Alakamar</a>.
         <br/>
         <i class="bi bi-github"></i>
-        <a href="https://github.com/ToxykAuBleu/VenteCD" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Code source</a> | Version 1.1
+        <a href="https://github.com/ToxykAuBleu/VenteCD" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Code source</a> | Version 1.1.1
         </p>
     </footer>
     <script src="./index.js" type="module"></script>

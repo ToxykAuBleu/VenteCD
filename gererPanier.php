@@ -44,7 +44,7 @@
                 exit();
             }
             
-            $nomtable = "CD";
+            $nomtable = $ini["MYSQL"]["Table"];
             $query = "SELECT * FROM $nomtable WHERE ID=" . $id . " ;";
             
             $result = mysqli_query($link, $query);

@@ -11,7 +11,7 @@
 		exit();
 	}
 
-	$nomtable = "cd";
+	$nomtable = $ini["MYSQL"]["Table"];
 	// Recherche dans la table CD avec potentiellement un tag en paramètre.
 	if (! isset($_GET["search"]) || $_GET["search"] == "") {
 		$query = "SELECT * FROM $nomtable";

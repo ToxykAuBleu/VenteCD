@@ -31,18 +31,7 @@ Afin d'installer le site web sur votre machine, vous devez vous assurer que vous
 > Nous prenons comme exemple un serveur Apache2 avec une configuration par défaut en ce qui concerne les hôtes virtules (répertoire par défaut normalement: `/var/www`).
 1. Clôner le dépot, à la racine de votre site web, soit depuis une invite de commande (`git clone https://github.com/ToxykAuBleu/VenteCD`), soit en téléchargant le dossier ZIP.
 2. Extraire l'archive (si c'est le dossier ZIP), puis déplacer vous dans le nouveau dossier avec `cd VenteCD/`
-3. Créer un fichier de configuration `config.ini` en respectant ce patron:
-```ini
-[MYSQL]
-Database = "<nom de la base de données>"
-Adresse = "<adresse ip>:<port>"
-Utilisateur = "<nom utilisateur>"
-MotPasse = "<mot de passe de l'utilisateur>"
-
-[ADMIN]
-Utilisateur = "<pseudonyme de l'administrateur>"
-MotPasse = "<mot de passe de l'administrateur>"
-```
+3. Créer un fichier de configuration `config.ini` en respectant le patron présent dans ce dépot (fichier `config.template.ini`)
 4. Sur le serveur MySQL, créer une nouvelle base de données et un nouvel utilisateur puis exécuter la requête suivante sur cette nouvelle bdd:
 ```sql
 DROP TABLE IF EXISTS CD;
