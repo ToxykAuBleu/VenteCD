@@ -15,7 +15,7 @@ NB : Les CD pourront au choix être enregistrés sur une BD ou dans un fichier X
 
 ## Fonctionnalités supplémentaires
 - Utilisation de [Bootstrap 5.3](https://getbootstrap.com/) pour le style des pages ainsi que des icônes.
-- Possibilité de rechecher des CD de différentes manières : titre, genre, album.
+- Possibilité de rechercher des CD de différentes manières : titre, genre, album.
 - Application de la méthode AJAX sur la majorité du site (recherche de CD, gestion du panier).
 
 ## Installation
